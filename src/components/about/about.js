@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import './about.css';
 
 
@@ -7,8 +8,8 @@ class About extends Component {
         return (
             <div className="content_container">
                 <div className="content">
-                    <h1 className="title">WELCOME TO MY SITE</h1>
-                    <p className="description">This website was built with Flutter to provide context for the article I recently wrote about web application development with Flutter. The backend for the blog posts is handled by Firebase. You can view the full source code on my Github page.</p>
+                    <h1 className="title">WELL HELLO THERE</h1>
+                    <p className="description">This is the first iteration of my personal website. I'm not sure about the design yet so it might change over time. On this website you'll find my portfolio, a description of my skills and my contact information. These are the appropriate sections of this site. For inappropriate, see <Link to="/blog">Blog</Link></p>
 
                 </div>
                 <div className="divider"></div>

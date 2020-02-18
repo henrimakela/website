@@ -8,7 +8,7 @@ class ServiceSection extends Component {
             <div className="container">
                 <div className="text_container">
                 <h3>{this.props.title}</h3>
-                <p>{this.props.description}</p>
+                {this.props.description}
                 </div>
              
                 <img className="section_image" src={"/images/" + this.props.image} alt="Section illustration"/>

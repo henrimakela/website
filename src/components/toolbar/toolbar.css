@@ -41,7 +41,7 @@
 
 .toolbar_nav_items a:hover,
 .toolbar_nav_items a:active{
-    color: #17B890
+    color: #17B890;
 }
 
 @media (max-width: 768px){

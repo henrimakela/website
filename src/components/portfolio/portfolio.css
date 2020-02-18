@@ -5,9 +5,16 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-bottom: 24px;
     
 }
 
+.portfolio_section_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+}
 .header_text_container{
     width: 500px;
 }
@@ -27,8 +34,9 @@
     background-color: black;
     font-weight: 800;
     font-size: 22px;
-    width: 100%;
+    width: 80%;
     height: 64px;
+    border: none;
 }
 
 .image_container_portfolio{
@@ -54,5 +62,8 @@
     }
     .description{
         text-align: center;
+    }
+    .btn_black{
+        width: 100%;
     }
 }

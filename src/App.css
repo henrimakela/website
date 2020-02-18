@@ -1,6 +1,6 @@
 .layout_container{
     padding-top: 32px;
-    width: 80%;
+    max-width: 1200px;
     margin:auto;
 }
 
