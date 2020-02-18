@@ -15,7 +15,7 @@ class PortfolioCard extends Component {
                     <p className="hide_on_mobile">{this.props.tech}</p>
                     <h4 className="hide_on_mobile" style={{color: this.props.subtitleColor}}>Keywords</h4>
                     <p style={{color: this.props.subtitleColor, fontWeight: "bold"}}>{this.props.keywords}</p>
-                    <a><img className="google_play_badge" src="/images/google-play-badge.png"/></a>
+                    <a href={this.props.playUrl}><img className="google_play_badge" src="/images/google-play-badge.png"/></a>
                 </div>
             </div>
         );

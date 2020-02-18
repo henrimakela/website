@@ -17,6 +17,7 @@
 }
 
 .google_play_badge{
+    height:80px;
     width: 200px;
 
 }
@@ -33,7 +34,7 @@
     
 }
 
-@media(max-width: 768px){
+@media(max-width: 900px){
     .portfolio_card_text_container{
         max-width: 80%;
         text-align: center;
@@ -43,16 +44,20 @@
         justify-content: center;
     }
     .portfolio_card{
+        padding: 24px 0px;
+        margin: 0px;
         width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         box-shadow: none;
         background: white !important;
+        border-radius: 0px;
+        border-bottom: 1px solid #E0E0E0;
     }
     .portfolio_card_image{
        margin: 0px;
-       max-width: 80%;
+       max-width: 40%;
     }
 
     .portfolio_card_text_container{
@@ -64,6 +69,12 @@
     .hide_on_mobile{
         display: none;
     }
+}
+
+@media(max-width: 480px){
+    .portfolio_card_image{
+        max-width: 80%;
+     }
 }
 
 /*

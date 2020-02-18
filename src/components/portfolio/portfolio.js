@@ -6,6 +6,19 @@ import PortfolioCard from './portfolio_card';
 //NOTE: THE HEADER USES PARTLY THE SAME CSS AS ABOUT PAGE
 
 class Portfolio extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+          showApps: true
+        };
+      }
+      
+      displayApps(showapps) {
+          this.setState({
+              showApps: showapps
+          })
+      }
     render() {
         return (
             <div>
@@ -14,7 +27,7 @@ class Portfolio extends Component {
                         <h1 className="title">PORTFOLIO</h1>
                         <p className="description">I have a lot projects on my Github. Most of them mobile related. I've published four applications on Google Play. Some of the other repositories are just kind of exercises I've made while learning a new technology or a concept.</p>
                         <a href="https://github.com/henrimakela"><button className="btn_black">Take me to Github</button></a>
-
+                        
                     </div>
                     <div className="divider"></div>
                     <div className="image_container_portfolio">
@@ -22,8 +35,19 @@ class Portfolio extends Component {
                     </div>
                     
                 </div>
+                <div className="content_toggle_row">
+                        <h4 style={{color: this.state.showApps ? "#17B890" : "#000", cursor: "pointer"}} onClick={() => this.displayApps(true)}>Apps</h4>
+                        <h4 style={{color: this.state.showApps ? "#000" : "#17B890", cursor: "pointer"}} onClick={() => this.displayApps(false)}>Other</h4>
+                    </div>
+                <div className="portfolio_content_other" style={{display : this.state.showApps ? 'none' : 'inherit'}}>
+                    <h3>Articles</h3>
+                    <h4><a href="https://blog.boogiesoftware.com/2020/01/web-application-development-with-flutter.html">Web application development with Flutter</a></h4>
+                    <h4><a href="https://blog.boogiesoftware.com/2019/10/mobile-application-development-with.html">Mobile application development with Flutter - a Case Study</a></h4>
+                </div>
+                <div style={{display : this.state.showApps ? 'inherit' : 'none'}}>
                 <div className="portfolio_section_container">
                 <PortfolioCard
+                    playUrl="https://play.google.com/store/apps/details?id=mmanews.henrm.com.mma_news&hl=en"
                     background={"#2196F3"}
                     subtitleColor={"#2196F3"}
                     image="mma_news.png" 
@@ -35,6 +59,7 @@ class Portfolio extends Component {
                     keywords="Dart, Flutter, Cross-platform, RSS"               
                     />
                 <PortfolioCard 
+                    playUrl="https://play.google.com/store/apps/details?id=com.henri.monthlymusicchallenge"
                     background={"#000"}
                     subtitleColor={"#000"} 
                     image="guitar_log.png"
@@ -46,7 +71,8 @@ class Portfolio extends Component {
                     keywords="Dart, Flutter, Cross-platform"
                     
                     />
-                <PortfolioCard 
+                <PortfolioCard
+                    playUrl="https://play.google.com/store/apps/details?id=com.henrimakela.locations" 
                     background={"#78947A"} 
                     subtitleColor={"#78947A"} 
                     image="kalapaikka.png"
@@ -60,6 +86,7 @@ class Portfolio extends Component {
                     keywords="Kotlin, Android architecture components, MVVM"
                     
                     />
+                </div>
                 </div>
             </div>
 

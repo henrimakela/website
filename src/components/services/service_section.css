@@ -4,7 +4,6 @@
     padding-bottom: 32px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap-reverse;
     justify-content: space-between;
     border-bottom: 1px solid #E0E0E0;
 }
@@ -31,7 +30,9 @@
 }
 
 .section_image{
-    width: 350px;
+    height: auto;
+    max-height: 250px;
+    max-width: 350px;
 }
 
 @media(max-width:767px){
@@ -44,6 +45,7 @@
     }
     .container{
         justify-content: center;
+        flex-direction: column-reverse;
     }
     
 }
