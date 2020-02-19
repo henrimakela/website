@@ -27,16 +27,17 @@
 .contact_image{
     max-width: 350px;
 }
-
+/*#232424*/
 .text_div h1{
-    margin: 0px;
+    margin-bottom: 16px;
     max-width: 100%;
     font-size: 68px;
 }
 
 .text_div p{
-    margin: 0px;
-    font-size: 18px;
+    margin-top:16px;
+    max-width: 450px;
+    font-size: 28px;
 }
 
 .icon_row{
@@ -46,21 +47,34 @@
     justify-content: space-between;
 }
 .icon{
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     padding: 16px;
 }
 
 @media(max-width: 768px){
     .icon_row{
-        flex-direction: column;
-        align-items: flex-start;
+        
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
     }
-    .contact_container{
-       
+
+    .icon_row h4{
+        display: none;
+    }
+    
+    .text_div{
+        max-width: 80%;
+        align-self: center;
+        justify-self: center
     }
     .text_div h1{
         text-align: center;
         font-size: 32px;
+    }
+    .text_div p{
+
+        font-size: 22px;
     }
 }
