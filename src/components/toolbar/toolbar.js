@@ -15,7 +15,7 @@ class Toolbar extends Component {
                         <DrawerToggle click={this.props.drawerClickHandler}/>
                     </div>
                     <div className="spacer_mobile"></div>
-                    <div className="toolbar_logo"><a href="/">LOGO HERE</a></div>
+                    <div className="toolbar_logo"><a href="/">LOGO</a></div>
                     <div className="spacer"></div>
                     <div className="toolbar_nav_items">
                         <ul>
