@@ -8,6 +8,7 @@ import About from './components/about/about';
 import Portfolio from './components/portfolio/portfolio';
 import Services from './components/services/services';
 import Contact from './components/contact/contact';
+import Helmet from 'react-helmet';
 import './App.css';
 
 
@@ -41,6 +42,18 @@ class App extends Component {
 
     return (
       <Router>
+        <Helmet>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="/favicon.ico"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <meta name="theme-color" content="#000000"/>
+        <meta name="description" content="Professional and unprofessional content" data-react-helmet="true"/>
+        <link rel="apple-touch-icon" href="/logo192.png"/>
+        <link rel="manifest" href="/manifest.json"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/>
+        <title>Henri Mäkelä</title><link href="/static/css/main.91c5b94b.chunk.css" rel="stylesheet"/>
+            </Helmet>
+
       <div style={{height: '100%'}}>
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
         <Drawer show={this.state.sideDrawerOpen}/>
