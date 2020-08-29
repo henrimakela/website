@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import PostItem from './post_item';
-import './blog.css';
+import styled from  'styled-components';
+
+
+const PostsContainer  = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`;
 
 class Blog extends Component {
 
@@ -41,11 +49,11 @@ class Blog extends Component {
           return <div>Loading posts...</div>;
         } else {
           return (
-            <div className="posts_container">
+            <PostsContainer>
               {items.map(item => (
                 <PostItem headerUrl={item.images[0].url} link={item.url} title={item.title} content={item.content} published={item.published} />
               ))}
-            </div>
+            </PostsContainer>
           );
         }
     }
