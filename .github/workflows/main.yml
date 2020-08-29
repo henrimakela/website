@@ -14,9 +14,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Build
+        run: CI=false npm run build
         env:
           REACT_APP_BLOGGER_API_KEY: ${{ secrets.REACT_APP_BLOGGER_API_KEY }}
-        run: CI=false npm run build
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
