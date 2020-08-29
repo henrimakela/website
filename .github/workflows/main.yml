@@ -1,6 +1,6 @@
 name: Website Deploy
 on:
-  merge:
+  push:
     branches:
       - master
 
