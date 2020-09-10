@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
-import './backdrop.css';
+import styled from 'styled-components';
+
+const BackdropShadow = styled.div`
+    position: fixed;
+    width:100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 100;
+`;
 
 class Backdrop extends Component {
     render() {
         return (
-            <div className="backdrop" onClick={this.props.click}>
-                
-            </div>
+            <BackdropShadow onClick={this.props.click}></BackdropShadow>
         );
     }
 }

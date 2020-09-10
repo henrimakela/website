@@ -1,14 +1,39 @@
 import React, { Component } from 'react';
-import "./drawer_toggle.css";
+import styled from 'styled-components';
+
+const ToggleButton = styled.button`
+    height: 24px;
+    width: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: space-around;
+
+    &:focus{
+        outline: none;
+    }
+`;
+
+const Line = styled.div`
+    width: 32px;
+    height: 2px;
+    background-color: black;
+`;
+
+
 
 class DrawerToggle extends Component {
     render() {
         return (
-            <button className="toggle_button" onClick={this.props.click}>
-                <div className="toggle_button_line"></div>
-                <div className="toggle_button_line"></div>
-                <div className="toggle_button_line"></div>
-            </button>
+            <ToggleButton onClick={this.props.click}>
+                <Line></Line>
+                <Line></Line>
+                <Line></Line>
+            </ToggleButton>
         );
     }
 }

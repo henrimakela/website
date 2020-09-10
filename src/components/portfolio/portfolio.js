@@ -1,9 +1,112 @@
 import React, { Component } from 'react';
-import "./portfolio.css";
-import PortfolioSection from './portfolio_section';
 import PortfolioCard from './portfolio_card';
+import styled from 'styled-components';
 
-//NOTE: THE HEADER USES PARTLY THE SAME CSS AS ABOUT PAGE
+
+const Header = styled.div`
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+
+    @media(max-width: 768px){
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+`;
+
+const TextArea = styled.div`
+    width: 500px;
+
+    @media(max-width: 768px){
+        width: 90%;
+    }
+`;
+
+const Title = styled.h1`
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 90%;
+
+    @media(max-width: 768px){
+        font-size: 32px;
+        text-align: center;
+    }
+`;
+
+const Description = styled.p`
+    font-size: 22px;
+
+    @media(max-width: 768px){
+        text-align: center;
+    }
+
+`;
+
+const Button = styled.button`
+    color: white;
+    background-color: black;
+    font-weight: 800;
+    font-size: 22px;
+    width: 100%;
+    height: 64px;
+    border: none;
+
+    @media(max-width: 768px){
+        width:100%;
+    }
+
+`;
+
+const Section = styled.section`
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+
+`;
+
+const Row = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    & > h4:hover{
+        color: #17B890;
+    }
+`;
+
+const OtherContent = styled.div`
+    max-width:80%;
+    margin: auto;
+    padding: 32px 16px;
+
+    & > h4 > a{
+        text-decoration: none;
+        color: #17B890
+    }
+    &a:hover{
+        color:black;
+    }
+
+`;
+
+const AppContent = styled.div``;
+
+const ImageArea = styled.div`
+    max-width: 450px;
+`;
+
+const HeaderImage = styled.img`
+    width: 100%;
+`;
+
 
 class Portfolio extends Component {
 
@@ -22,30 +125,29 @@ class Portfolio extends Component {
     render() {
         return (
             <div>
-                <div className="header_container">
-                    <div className="header_text_container">
-                        <h1 className="title">PORTFOLIO</h1>
-                        <p className="description">I have a lot projects on my Github. Most of them mobile related. I've published four applications on Google Play. Some of the other repositories are just kind of exercises I've made while learning a new technology or a concept.</p>
-                        <a href="https://github.com/henrimakela"><button className="btn_black">Take me to Github</button></a>
+                <Header>
+                    <TextArea>
+                        <Title>PORTFOLIO</Title>
+                        <Description>I have a lot projects on my Github. Most of them mobile related. I've published four applications on Google Play. Some of the other repositories are just kind of exercises I've made while learning a new technology or a concept.</Description>
+                        <a href="https://github.com/henrimakela"><Button className="btn_black">Take me to Github</Button></a>
                         
-                    </div>
-                    <div className="divider"></div>
-                    <div className="image_container_portfolio">
-                        <img className="page_image" src="/images/portfolio.png" alt="Portfolio page header image"/>
-                    </div>
+                    </TextArea>
+                    <ImageArea>
+                        <HeaderImage src="/images/portfolio.png" alt="Portfolio page header image"/>
+                    </ImageArea>
                     
-                </div>
-                <div className="content_toggle_row">
+                </Header>
+                <Row>
                         <h4 style={{color: this.state.showApps ? "#17B890" : "#000", cursor: "pointer"}} onClick={() => this.displayApps(true)}>Apps</h4>
                         <h4 style={{color: this.state.showApps ? "#000" : "#17B890", cursor: "pointer"}} onClick={() => this.displayApps(false)}>Other</h4>
-                    </div>
-                <div className="portfolio_content_other" style={{display : this.state.showApps ? 'none' : 'inherit'}}>
+                    </Row>
+                <OtherContent style={{display : this.state.showApps ? 'none' : 'inherit'}}>
                     <h3>Articles</h3>
                     <h4><a href="https://blog.boogiesoftware.com/2020/01/web-application-development-with-flutter.html">Web application development with Flutter</a></h4>
                     <h4><a href="https://blog.boogiesoftware.com/2019/10/mobile-application-development-with.html">Mobile application development with Flutter - a Case Study</a></h4>
-                </div>
-                <div style={{display : this.state.showApps ? 'inherit' : 'none'}}>
-                <div className="portfolio_section_container">
+                </OtherContent>
+                <AppContent style={{display : this.state.showApps ? 'inherit' : 'none'}}>
+                <Section>
                 <PortfolioCard
                     playUrl="https://play.google.com/store/apps/details?id=mmanews.henrm.com.mma_news&hl=en"
                     background={"#2196F3"}
@@ -86,8 +188,8 @@ class Portfolio extends Component {
                     keywords="Kotlin, Android architecture components, MVVM"
                     
                     />
-                </div>
-                </div>
+                </Section>
+                </AppContent>
             </div>
 
             
