@@ -16,6 +16,22 @@
 
 .App{
     height: 100vh;
-    background: rgba(47, 52, 58, .90)
+    background: rgba(21, 23, 26, 0.95);
+    
+}
+
+body{
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+    letter-spacing: 0.12ch;
+    line-height: 2.8ch;
+}
+
+h1{ 
+    font-family: Nunito;
+    font-weight: 600;
+    letter-spacing: 0.25ch;
+    font-size: 64px;
     
 }
