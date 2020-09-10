@@ -15,15 +15,15 @@ class Toolbar extends Component {
                         <DrawerToggle click={this.props.drawerClickHandler}/>
                     </div>
                     <div className="spacer_mobile"></div>
-                    <div className="toolbar_logo"><a href="/">LOGO</a></div>
+                    <div className="toolbar_logo"><a href="/">DARK</a></div>
                     <div className="spacer"></div>
                     <div className="toolbar_nav_items">
                         <ul>
-                            <li><Link to="/about">About</Link></li>
-                            <li><Link to="/blog">Blog</Link></li>
-                            <li><Link to="/services">Skills</Link></li>
-                            <li><Link to="/portfolio">Portfolio</Link></li>
-                            <li><Link to="/contact">Contact</Link></li>    
+                            <li><Link to="/about">ABOUT</Link></li>
+                            <li><Link to="/blog">BLOG</Link></li>
+                            <li><Link to="/services">SKILLS</Link></li>
+                            <li><Link to="/portfolio">PORTFOLIO</Link></li>
+                            <li><Link to="/contact">CONTACT</Link></li>    
                         </ul>                 
                     </div>
                    

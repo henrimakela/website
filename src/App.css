@@ -35,3 +35,11 @@ h1{
     font-size: 64px;
     
 }
+a{  
+    font-family: Nunito;
+    letter-spacing: 0.40ch;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
