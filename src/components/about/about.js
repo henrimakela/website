@@ -69,9 +69,7 @@ class About extends Component {
 
                 </Content>
     
-                <ImageContainer>
-                    <PageImage src="/images/pwa.png" alt="Progressive web application"/>
-                </ImageContainer>
+             
             </ComponentContainer>
         );
     }
