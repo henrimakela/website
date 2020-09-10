@@ -54,7 +54,7 @@ class App extends Component {
         <title>Henri Mäkelä</title><link href="/static/css/main.91c5b94b.chunk.css" rel="stylesheet"/>
             </Helmet>
 
-      <div style={{height: '100%'}}>
+      <div className="App">
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
         <Drawer show={this.state.sideDrawerOpen}/>
         {backdrop}

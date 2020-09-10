@@ -13,3 +13,9 @@
         
     }
 }
+
+.App{
+    height: 100vh;
+    background: rgba(47, 52, 58, .90)
+    
+}
