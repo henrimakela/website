@@ -6,6 +6,7 @@ body {
   height: 100%;
   background-image: url("/images/background.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 html{
@@ -14,8 +15,12 @@ html{
 
 h1,h2,h3,h4{
   font-weight: 900;
+  margin: 0px;
+  padding: 0px;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+

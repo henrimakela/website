@@ -55,11 +55,12 @@ class App extends Component {
             </Helmet>
 
       <div className="App">
+        <div className="layout-container">
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
         <Drawer show={this.state.sideDrawerOpen}/>
         {backdrop}
 
-        <div className="layout_container">
+        
         <Switch>
           <Route path="/about">
             <About />
