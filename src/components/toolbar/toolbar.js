@@ -21,7 +21,7 @@ class Toolbar extends Component {
                         <ul>
                             <li><Link to="/about">ABOUT</Link></li>
                             <li><Link to="/blog">BLOG</Link></li>
-                            <li><Link to="/services">SKILLS</Link></li>
+                            <li><Link to="/expertise">EXPERTISE</Link></li>
                             <li><Link to="/portfolio">PORTFOLIO</Link></li>
                             <li><Link to="/contact">CONTACT</Link></li>    
                         </ul>                 

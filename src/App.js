@@ -6,7 +6,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Blog from './components/blog/blog';
 import About from './components/about/about';
 import Portfolio from './components/portfolio/portfolio';
-import Services from './components/legacy/services/services';
+import Expertise from './components/expertise/expertise';
 import Contact from './components/contact/contact';
 import Helmet from 'react-helmet';
 import './App.css';
@@ -71,8 +71,8 @@ class App extends Component {
           <Route path="/portfolio">
             <Portfolio/>
           </Route>
-          <Route path="/services">
-            <Services />
+          <Route path="/expertise">
+            <Expertise />
           </Route>
           <Route path="/contact">
             <Contact />
