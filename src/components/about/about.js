@@ -3,8 +3,6 @@ import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
 const Title = styled.h1`
-    font-size: 72px;
-    font-weight: 800;
     line-height: 90%;
     margin-bottom: 0px;
 
@@ -14,49 +12,55 @@ const Title = styled.h1`
     }
 `;
 
+
+
 const ComponentContainer = styled.div`
     width: 100%;
-    height: 80vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 180px;
+
+   
 
     @media(max-width: 768px){
         height: auto;
-        flex-direction: column-reverse;
+        margin-top: 32px;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 }
 `;
 
-const ImageContainer = styled.div`
-    max-width: 600px;
 
-    @media(max-width: 768px){
-        width: 90%
-}
-`;
 
 const Content = styled.div`
-    width:500px;
-
+    margin: 32px;
+    max-width: 500px;
+    
     @media(max-width: 768px){
         width: 90%;
     }
-`;
 
-const Description = styled.p`
-    font-size: 22px;
-
-    @media(max-width: 768px){
-        text-align: center;
+    &>button{
+        margin-top: 32px
     }
 `;
 
-const PageImage = styled.img`
-    width: 100%;
+const Row = styled.div`
+    display: flex;
+    flex-direction: row;
+    &>h4{
+        margin-right: 10px;
+    }
+
+    @media(max-width: 768px){
+        justify-content: center;
+    }
 `;
+
+
+
 
 
 class About extends Component {
@@ -64,12 +68,20 @@ class About extends Component {
         return (
             <ComponentContainer>
                 <Content>
-                    <Title>HELLO HELLO</Title>
-                    <Description>This is the first iteration of my personal website. I'm not sure about the design yet so it might change over time. On this website you'll find my portfolio, a description of my skills and my contact information. These are the appropriate sections of this site. For inappropriate, see <Link to="/blog">Blog</Link></Description>
-
+                    <Title>GREETINGS</Title>
+                    <p>This site works as my portfolio, blog and also as a hobby project to keep up todate with the modern web technologies and design.</p>
+                    <a href="https://henrimakela.fi/portfolio"><button>PORTFOLIO</button></a>
                 </Content>
-    
-             
+
+                <Content>
+                    <Row>
+                        <h4>DOWNLOAD MY CV</h4>
+                        <img src="/images/download.svg"/>
+                    </Row>
+                    
+                    <p>This text is here just so I can have two columns of text on this page. That is the only reason. That’s two sentences already. Thats three.</p>                
+                </Content>
+
             </ComponentContainer>
         );
     }

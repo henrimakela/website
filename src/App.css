@@ -35,6 +35,10 @@ button {
     border: none;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 h4{
     color: #B6B6B6;
 }
@@ -50,7 +54,7 @@ a{
 
 .layout-container{
     padding-top: 32px;
-    max-width: 1200px;
+    max-width: 1600px;
     margin:auto;
   }
   
@@ -64,7 +68,7 @@ a{
     }
     
     button{
-        width:100%;
+        width:80%;
     }
 
     body{
