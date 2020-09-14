@@ -2,17 +2,6 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
-const Title = styled.h1`
-    line-height: 90%;
-    margin-bottom: 0px;
-
-    @media(max-width: 768px) {
-        font-size: 32px;
-        text-align: center;
-    }
-`;
-
-
 
 const ComponentContainer = styled.div`
     width: 100%;
@@ -68,7 +57,7 @@ class About extends Component {
         return (
             <ComponentContainer>
                 <Content>
-                    <Title>GREETINGS</Title>
+                    <h1>GREETINGS</h1>
                     <p>This site works as my portfolio, blog and also as a hobby project to keep up todate with the modern web technologies and design.</p>
                     <a href="https://henrimakela.fi/portfolio"><button>PORTFOLIO</button></a>
                 </Content>
