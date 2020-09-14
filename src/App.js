@@ -6,7 +6,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Blog from './components/blog/blog';
 import About from './components/about/about';
 import Portfolio from './components/portfolio/portfolio';
-import Services from './components/services/services';
+import Services from './components/legacy/services/services';
 import Contact from './components/contact/contact';
 import Helmet from 'react-helmet';
 import './App.css';
