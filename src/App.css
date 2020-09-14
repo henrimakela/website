@@ -1,8 +1,7 @@
 
 .App{
-    height: 100vh;
+    min-height: 100vh;
     background: rgba(21, 23, 26, 0.95);
-    
 }
 
 body{
