@@ -54,6 +54,10 @@ li > a {
   font-size: 14px;
 }
 
+ul {
+  list-style: none;
+}
+
 .layout-container {
   padding-top: 32px;
   max-width: 1600px;
