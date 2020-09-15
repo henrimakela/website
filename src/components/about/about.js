@@ -1,80 +1,86 @@
-import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
-import styled from 'styled-components';
-
-const Title = styled.h1`
-    font-size: 72px;
-    font-weight: 800;
-    line-height: 90%;
-    margin-bottom: 0px;
-
-    @media(max-width: 768px) {
-        font-size: 32px;
-        text-align: center;
-    }
-`;
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 const ComponentContainer = styled.div`
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    flex-direction: row;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 100px;
+
+  @media (max-width: 768px) {
+    height: auto;
+    margin-top: 32px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    @media(max-width: 768px){
-        height: auto;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-}
-`;
-
-const ImageContainer = styled.div`
-    max-width: 600px;
-
-    @media(max-width: 768px){
-        width: 90%
-}
+  }
 `;
 
 const Content = styled.div`
-    width:500px;
+  margin: 32px;
+  max-width: 500px;
 
-    @media(max-width: 768px){
-        width: 90%;
-    }
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+
+  & > button {
+    margin-top: 32px;
+  }
 `;
 
-const Description = styled.p`
-    font-size: 22px;
-
-    @media(max-width: 768px){
-        text-align: center;
-    }
+const Box = styled.div`
+  height: 32px;
 `;
+const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  & > h4 {
+    margin-right: 10px;
+  }
 
-const PageImage = styled.img`
-    width: 100%;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
-
 
 class About extends Component {
-    render() {
-        return (
-            <ComponentContainer>
-                <Content>
-                    <Title>HELLO HELLO</Title>
-                    <Description>This is the first iteration of my personal website. I'm not sure about the design yet so it might change over time. On this website you'll find my portfolio, a description of my skills and my contact information. These are the appropriate sections of this site. For inappropriate, see <Link to="/blog">Blog</Link></Description>
+  render() {
+    return (
+      <ComponentContainer>
+        <Content>
+          <h1>GREETINGS</h1>
+          <p>
+            This site works as my portfolio, blog and also as a hobby project to
+            keep up to date with the modern web technologies and design. The
+            site is currently under construction and having a UI facelift,
+            <br></br>
+            <br></br>so there is a possibility that some content might be
+            missing and or some things are not working.
+          </p>
+          <Box></Box>
+          <a href="https://henrimakela.fi/portfolio">
+            <button>PORTFOLIO</button>
+          </a>
+        </Content>
 
-                </Content>
-    
-                <ImageContainer>
-                    <PageImage src="/images/pwa.png" alt="Progressive web application"/>
-                </ImageContainer>
-            </ComponentContainer>
-        );
-    }
+        <Content>
+          <Row>
+            <h4>DOWNLOAD MY CV</h4>
+            <img src="/images/download.svg" />
+          </Row>
+
+          <p>
+            This text is here just so I can have two columns of text on this
+            page. That is the only reason. That’s two sentences already. Thats
+            three.
+          </p>
+        </Content>
+      </ComponentContainer>
+    );
+  }
 }
 
 export default About;

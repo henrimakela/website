@@ -1,15 +1,86 @@
-.layout_container{
-    padding-top: 32px;
-    max-width: 1200px;
-    margin:auto;
+.App {
+  min-height: 100vh;
+  background: rgba(21, 23, 26, 0.95);
 }
 
-@media(max-width: 768px){
-    
-    .layout_container{
-        width: 100%;
-        padding: 16px;
-        box-sizing: border-box;
-        
-    }
+body {
+  color: white;
+  font-family: Montserrat;
+  font-size: 18px;
+  letter-spacing: 0.12ch;
+  line-height: 2.8ch;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-family: Nunito;
+  font-weight: 600;
+  letter-spacing: 0.25ch;
+  font-size: 64px;
+  line-height: 90%;
+}
+
+button {
+  background-color: white;
+  border-radius: 32px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.25ch;
+  width: 80%;
+  min-width: 300px;
+  height: 64px;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+h4 {
+  color: #b6b6b6;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+li > a {
+  font-family: Nunito;
+  letter-spacing: 0.4ch;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+}
+
+.layout-container {
+  padding-top: 32px;
+  max-width: 1600px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .layout-container {
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  button {
+    width: 80%;
+  }
+
+  body {
+    text-align: center;
+  }
 }
