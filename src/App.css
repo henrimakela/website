@@ -41,14 +41,17 @@ button:hover {
 h4 {
   color: #b6b6b6;
 }
-
 a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+li > a {
   font-family: Nunito;
   letter-spacing: 0.4ch;
   font-weight: 400;
   font-size: 14px;
-  color: white;
-  text-decoration: none;
 }
 
 .layout-container {
