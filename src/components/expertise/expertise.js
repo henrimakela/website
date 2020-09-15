@@ -12,9 +12,6 @@ const ComponentContainer = styled.div`
     height: auto;
     grid-template-columns: auto;
     margin-top: 32px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 `;
 
@@ -39,7 +36,8 @@ class Expertise extends Component {
           <h1>EXPERTISE</h1>
           <p>
             Here’s some of information about the expertise I have regarding
-            software.
+            software. Mobile application development is what I'm currently most
+            comfortable with. I also like UI design.
           </p>
         </Content>
 
@@ -55,14 +53,18 @@ class Expertise extends Component {
         <Content>
           <h4>WEB DEVELOPMENT</h4>
           <p>
-            Modern web development both frontend and backend. This site is built
-            with React and Firebase.
+            I like web frontend development with React more but I do also have
+            some experience in backend development with NodeJS and GraphQl.
           </p>
         </Content>
 
         <Content>
-          <h4>DESIGN & USER EXPERIENCE</h4>
-          <p></p>
+          <h4>UI DESIGN & USER EXPERIENCE</h4>
+          <p>
+            I have a decent understanding of what is a good and what is a bad
+            user experience. Am able to design modern and good looking user
+            interfaces.{" "}
+          </p>
         </Content>
 
         <Content>
@@ -70,9 +72,8 @@ class Expertise extends Component {
           <p></p>
         </Content>
         <Content>
-          <a href="https://henrimakela.fi/portfolio">
-            <button>DOWNLOAD MY CV</button>
-          </a>
+          <h4>AGILE METHODOLOGIES</h4>
+          <p></p>
         </Content>
       </ComponentContainer>
     );
