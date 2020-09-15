@@ -75,12 +75,17 @@ class Portfolio extends Component {
             </a>
           </Column>
           <Column>
-            <h4>Google Play</h4>
+            <a href="https://play.google.com/store/apps/developer?id=Henrm&hl=en">
+              <h4>Google Play</h4>
+            </a>
             <p>
-              I've published five applications on Google Play. Some of them are
-              built with Flutter, some of them with Kotlin. I haven't really
-              marketed them since they're published for the sake of finishing a
-              project and learning.
+              I've published five applications on{" "}
+              <a href="https://play.google.com/store/apps/developer?id=Henrm&hl=en">
+                Google Play.
+              </a>{" "}
+              Some of them are built with Flutter, some of them with Kotlin. I
+              haven't really marketed them since they're published for the sake
+              of finishing a project and learning.
             </p>
           </Column>
 
