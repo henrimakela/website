@@ -7,7 +7,7 @@ const ComponentContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 180px;
+  margin-top: 100px;
 
   @media (max-width: 768px) {
     height: auto;
@@ -54,7 +54,11 @@ class About extends Component {
           <h1>GREETINGS</h1>
           <p>
             This site works as my portfolio, blog and also as a hobby project to
-            keep up todate with the modern web technologies and design.
+            keep up to date with the modern web technologies and design. The
+            site is currently under construction and having a UI facelift,
+            <br></br>
+            <br></br>so there is a possibility that some content might be
+            missing and or some things are not working.
           </p>
           <Box></Box>
           <a href="https://henrimakela.fi/portfolio">
