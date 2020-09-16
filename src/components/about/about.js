@@ -54,11 +54,7 @@ class About extends Component {
           <h1>GREETINGS</h1>
           <p>
             This site works as my portfolio, blog and also as a hobby project to
-            keep up to date with the modern web technologies and design. The
-            site is currently under construction and having a UI facelift,
-            <br></br>
-            <br></br>so there is a possibility that some content might be
-            missing and or some things are not working.
+            keep up to date with the modern web technologies and design.
           </p>
           <Box></Box>
           <a href="https://henrimakela.fi/portfolio">
@@ -76,6 +72,11 @@ class About extends Component {
             This text is here just so I can have two columns of text on this
             page. That is the only reason. That’s two sentences already. Thats
             three.
+          </p>
+          <p>
+            The site is currently under construction and having a UI facelift,
+            so there is a possibility that some content might be missing and or
+            some things are not working.
           </p>
         </Content>
       </ComponentContainer>
