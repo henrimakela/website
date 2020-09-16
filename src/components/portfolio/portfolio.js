@@ -11,9 +11,11 @@ const Grid = styled.div`
 
   @media (max-width: 768px) {
     height: auto;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 32px;
-    grid-template-columns: auto;
   }
 `;
 

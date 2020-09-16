@@ -10,7 +10,10 @@ const ComponentContainer = styled.div`
 
   @media (max-width: 768px) {
     height: auto;
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 32px;
   }
 `;

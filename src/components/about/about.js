@@ -69,11 +69,6 @@ class About extends Component {
           </Row>
 
           <p>
-            This text is here just so I can have two columns of text on this
-            page. That is the only reason. That’s two sentences already. Thats
-            three.
-          </p>
-          <p>
             The site is currently under construction and having a UI facelift,
             so there is a possibility that some content might be missing and or
             some things are not working.
