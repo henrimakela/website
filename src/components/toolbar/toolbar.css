@@ -8,15 +8,8 @@
   padding: 0 1.5rem;
 }
 
-.toolbar_logo {
-  margin-left: 1.5rem;
-}
-
 .spacer {
   flex: 1;
-}
-
-.toolbar_nav_items a {
 }
 
 .toolbar_nav_items ul {
@@ -43,16 +36,10 @@
   .spacer {
     flex: 0;
   }
-  .toolbar_logo {
-    margin-right: 1.5rem;
-  }
 }
 
 @media (min-width: 769px) {
   .burger_bar {
     display: none;
-  }
-  .toolbar_logo {
-    margin: 0;
   }
 }

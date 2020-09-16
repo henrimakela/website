@@ -11,8 +11,13 @@ class Toolbar extends Component {
           <div className="burger_bar">
             <DrawerToggle click={this.props.drawerClickHandler} />
           </div>
-          <div className="spacer_mobile"></div>
 
+          <div className="spacer_mobile"></div>
+          <ul>
+            <li>
+              <Link to="/">HENRI MÄKELÄ</Link>
+            </li>
+          </ul>
           <div className="spacer"></div>
           <div className="toolbar_nav_items">
             <ul>

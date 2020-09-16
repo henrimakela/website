@@ -4,6 +4,7 @@ import styled from "styled-components";
 const ToggleButton = styled.button`
   height: 24px;
   width: 24px;
+  min-width: 24px !important;
   background: transparent;
   border: none;
   cursor: pointer;
