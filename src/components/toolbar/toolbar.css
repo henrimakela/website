@@ -12,6 +12,9 @@
   flex: 1;
 }
 
+ul {
+  display: inline-block;
+}
 .toolbar_nav_items ul {
   list-style: none;
   display: flex;

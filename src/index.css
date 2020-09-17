@@ -6,7 +6,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   background-image: url("/images/background.jpg");
-  box-shadow: inset 0 0 0 1000px rgba(21, 23, 26, 0.95);
+
   background-size: cover;
   background-repeat: no-repeat;
 }
