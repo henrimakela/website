@@ -32,7 +32,7 @@ const Content = styled.div`
 `;
 
 const Box = styled.div`
-  height: 32px;
+  height: 8px;
 `;
 const Row = styled.div`
   display: flex;

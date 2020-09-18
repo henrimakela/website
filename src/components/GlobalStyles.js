@@ -27,7 +27,7 @@ h1 {
 button {
   background-color: ${({ theme }) => theme.accentColor};
   color: ${({ theme }) => theme.body};
-  border-radius: 32px;
+  border-radius: 8px;
   font-family: Montserrat;
   font-weight: 700;
   font-size: 18px;
