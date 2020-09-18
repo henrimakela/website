@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import DrawerToggle from "./drawer/drawer_toggle";
 import { Link } from "react-router-dom";
 import "./toolbar.css";
+import ThemeModeToggle from "../theme_mode_toggle/theme_mode_toggle";
 
 class Toolbar extends Component {
   render() {
@@ -13,11 +14,15 @@ class Toolbar extends Component {
           </div>
 
           <div className="spacer_mobile"></div>
-          <ul>
-            <li>
-              <Link to="/">HENRI MÄKELÄ</Link>
-            </li>
-          </ul>
+          <ThemeModeToggle
+            theme={this.props.theme}
+            onChange={this.props.onChange}
+          ></ThemeModeToggle>
+
+          <li>
+            <Link to="/">HENRI MÄKELÄ</Link>
+          </li>
+
           <div className="spacer"></div>
           <div className="toolbar_nav_items">
             <ul>

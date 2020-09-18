@@ -22,7 +22,7 @@ const ToggleButton = styled.button`
 const Line = styled.div`
   width: 32px;
   height: 2px;
-  background-color: white;
+  background-color: ${({ theme }) => theme.text};
 `;
 
 class DrawerToggle extends Component {
